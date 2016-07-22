@@ -21,4 +21,4 @@ for (var fact = 2; fact < upto; fact++){
 }
 };
 
-console.log(highestFactor);
+console.log("Largest Prime Factor of 600851475143 = " + highestFactor);
