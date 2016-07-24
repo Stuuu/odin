@@ -11,7 +11,8 @@ height:400px;
 overflow: hidden;
 margin: 30px auto;
 }
-#slider > img {
+
+#slider >  img {
  width: 600px;
  height: 400px;
  float:left;
@@ -31,5 +32,5 @@ a.left {
 }
 
 a.right {
-  float: right;
+  float:right;
 }
