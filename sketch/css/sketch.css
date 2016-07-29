@@ -9,7 +9,7 @@ span.title {
   font-family: 'Oleo Script', cursive;
   color: #5ac7ff;
   text-shadow: 10px 10px 0 #ffd217;
-  font-size: 6em;
+  font-size: 5em;
   display: flex;
   align-items: center;
   justify-content: center }
@@ -28,9 +28,9 @@ span.title p {
           border: none;
           color: #ffd217;
           border: 2px solid #5ac7ff;
-          font-size: 1em;
+          font-size: 1.25em;
           margin: 10px 10px;
-          padding: 15px 32px;
+          padding: 5px 20px;
           text-align: center;
           text-decoration: none;
           display: inline-block;
@@ -70,7 +70,7 @@ span.title p {
     }
 
     .button:hover {
-        background-color: #4CAF50; /* Green */
+        background-color: #ffd217; /* Green */
         color: white;
     }
 
