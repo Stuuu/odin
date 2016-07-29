@@ -1,0 +1,91 @@
+#container {
+    background-color: #ffd217;
+    height: 700px;
+    width: 700px;
+    margin: 5% auto;
+}
+
+span.title {
+  font-family: 'Oleo Script', cursive;
+  color: #5ac7ff;
+  text-shadow: 10px 10px 0 #ffd217;
+  font-size: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: center }
+
+span.title p {
+  margin: 0 }
+
+  div.buttons {
+
+    display: flex;
+    align-items: center;
+    justify-content: center }
+
+    .button {
+      background-color: #FFF;
+          border: none;
+          color: #ffd217;
+          border: 2px solid #5ac7ff;
+          font-size: 1em;
+          margin: 10px 10px;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          border-radius: 10%;
+          font-family: 'Oleo Script', cursive;
+    }
+
+      #ranCol {
+      background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+      background-size: 1800% 1800%;
+
+      -webkit-animation: rainbow 5s ease infinite;
+      -z-animation: rainbow 5s ease infinite;
+      -o-animation: rainbow 5s ease infinite;
+        animation: rainbow 5s ease infinite;}
+
+      @-webkit-keyframes rainbow {
+          0%{background-position:0% 82%}
+          50%{background-position:100% 19%}
+          100%{background-position:0% 82%}
+      }
+      @-moz-keyframes rainbow {
+          0%{background-position:0% 82%}
+          50%{background-position:100% 19%}
+          100%{background-position:0% 82%}
+      }
+      @-o-keyframes rainbow {
+          0%{background-position:0% 82%}
+          50%{background-position:100% 19%}
+          100%{background-position:0% 82%}
+      }
+      @keyframes rainbow {
+          0%{background-position:0% 82%}
+          50%{background-position:100% 19%}
+          100%{background-position:0% 82%}
+
+    }
+
+    .button:hover {
+        background-color: #4CAF50; /* Green */
+        color: white;
+    }
+
+
+
+
+
+.unit {
+    background-color: #5ac7ff;
+    height: 41.75px;
+    width: 41.75px;
+    margin: 1px;
+    display: inline-block;
+    float: left
+}
+.hov {
+  background-color: white;
+}
