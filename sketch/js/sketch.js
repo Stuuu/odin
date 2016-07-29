@@ -19,7 +19,7 @@ $(document).ready(function() {
   $("#btnSubmit").click(function(){
      $(".unit").remove();
      $(".hov").remove();
-     var size = +prompt("Etch-A-Sketch Size?", "4-150");
+     var size = +prompt("Etch-A-Sketch Size?", "Enter any number between 1-150");
 
      var pixels = 700 / size;
      var highwid = pixels-2;
