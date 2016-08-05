@@ -17,7 +17,45 @@ def englishNumber number
   #left is how much of the number we still have left to write out.
   #"write" is the part we are writing out right now.
   # write and left... get it? :)
+
+  #Accounting for billions as an english string
   left = number
+  write = left/1000000000 #How many billions left to write out?
+  left = left - write*1000000000 # Subtract off those billions.
+
+  if write > 0
+    billions = englishNumber write
+    numString = numString + billions + ' billion'
+    if left > 0
+      numString = numString + ' '
+    end
+  end
+  #Accounting for millions as an english string
+  write = left/1000000 #How many millions left to write out?
+  left = left - write*1000000 # Subtract off those millions.
+
+  if write > 0
+    millions = englishNumber write
+    numString = numString + millions + ' million'
+    if left > 0
+
+      numString = numString + ' '
+    end
+  end
+
+
+  #Below is my attempt to add thousands as an english string
+  write = left/1000 #How many thousands left to write out?
+  left = left - write*1000 # Subtract off those thousands.
+
+  if write > 0
+    thousand = englishNumber write
+    numString = numString + thousand + ' thousand'
+    if left > 0
+      numString = numString + ' '
+    end
+  end
+
   write = left/100 #How many hundreds left to write out?
   left = left - write*100 # Subtract off those hundreds.
 
@@ -64,5 +102,4 @@ def englishNumber number
   numString
 end
 
-puts englishNumber(17)
-puts englishNumber(1599)
+puts englishNumber(1500500555)
